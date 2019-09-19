@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  nessus:
+    container_name: nessus-7.2.3
+    build:
+      context: .
+      dockerfile: Dockerfile_nessus
+    restart: always
+    ports:
+     - "8834:8834"
+    networks:
+     - nessusnet
+
+networks:
+  nessusnet:
