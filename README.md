@@ -8,7 +8,7 @@ Agility to implement Nessus
 
 1. Install docker and docker-compose;
 2. Download the Nessus version that you want to use
-3. Change the name of Nessus version inside the file Dockerfile_nessus
+3. Change the name of Nessus file inside the file Dockerfile_nessus
 
 ## Instalation
 
