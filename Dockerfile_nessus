@@ -1,0 +1,9 @@
+FROM centos:centos7
+
+RUN yum -y update
+
+ADD ./Nessus-7.2.3-es7.x86_64.rpm .
+
+RUN yum install -y Nessus-7.2.3-es7.x86_64.rpm
+
+ENTRYPOINT [ "/opt/nessus/sbin/nessusd" ]
